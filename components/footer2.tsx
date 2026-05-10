@@ -120,13 +120,25 @@ const Footer2 = (props: Props) => {
               </p>
               {/* Add this Social Row */}
               <div className="mt-6 flex gap-4 text-muted-foreground">
-                <a href="#" className="hover:text-primary">
+                <a
+                  href="#"
+                  aria-label="Follow us on Facebook"
+                  className="hover:text-primary"
+                >
                   <FaFacebook className="size-5" />
                 </a>
-                <a href="#" className="hover:text-primary">
+                <a
+                  href="#"
+                  aria-label="Follow us on LinkedIn"
+                  className="hover:text-primary"
+                >
                   <FaLinkedin className="size-5" />
                 </a>
-                <a href="#" className="hover:text-primary">
+                <a
+                  href="#"
+                  aria-label="Follow us on Twitter"
+                  className="hover:text-primary"
+                >
                   <FaXTwitter className="size-5" />
                 </a>
               </div>
@@ -163,6 +175,7 @@ const Footer2 = (props: Props) => {
                 <li key={linkIdx} className="underline hover:text-primary">
                   <a
                     href="#"
+                    aria-label={link.name}
                     onClick={(e) => {
                       e.preventDefault();
                       setModal(

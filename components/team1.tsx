@@ -86,7 +86,7 @@ const Team1 = ({
         {members.map((member) => (
           <div key={member.id} className="flex flex-col items-center">
             <Avatar className="mb-4 size-20 border md:mb-5 lg:size-24">
-              <AvatarImage src={member.avatar} />
+              <AvatarImage src={member.avatar} alt={member.name}/>
               <AvatarFallback>{member.name}</AvatarFallback>
             </Avatar>
             <p className="text-center font-medium">{member.name}</p>

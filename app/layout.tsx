@@ -32,7 +32,60 @@ export const metadata: Metadata = {
     "Catherine Anthony Ikono",
     "work from home",
     "freelancing for beginners",
-  ],};
+  ],
+  authors: [
+    { name: "Catherine Anthony Ikono" },
+    { name: "Uche Godswill", url: "https://github.com/Uche-arch" },
+  ],
+  creator: "Uche Godswill",
+  metadataBase: new URL("https://skilluhandearn.vercel.app"), // Update to her real domain
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    url: "https://skilluhandearn.vercel.app",
+    siteName: "Skill Up & Earn",
+    title: "Skill Up & Earn | Learn. Build. Earn Online.",
+    description:
+      "Learn five in-demand digital skills and start earning online in six weeks. No laptop, no experience, no excuses.",
+    images: [
+      {
+        url: "/og-image.jpg", // Add a 1200x630px branded image to your /public folder
+        width: 1200,
+        height: 630,
+        alt: "Skill Up & Earn Academy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skill Up & Earn | Learn. Build. Earn Online.",
+    description:
+      "Learn five in-demand digital skills and start earning online in six weeks. No laptop, no experience, no excuses.",
+    images: ["/og-image.jpg"],
+    creator: "@skilluandearn", // Update to her real Twitter/X handle
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 export default function RootLayout({
   children,
@@ -42,10 +95,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full `}
+      className={`${geistSans.variable} ${geistMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">{children}</body>
     </html>
   );
 }
-

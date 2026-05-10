@@ -152,10 +152,12 @@ const About3 = ({
                 className="mr-auto"
                 asChild
                 size="lg"
-                onClick={() => setModal("consultation")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setModal("consultation");
+                }}
               >
-                {/* <a href={breakout.buttonUrl} target="_blank"> */}
-                <a>{breakout.buttonText}</a>
+                <a href="#contact">{breakout.buttonText}</a>
               </Button>
             </div>
             <img

@@ -1,4 +1,10 @@
-import { FaDiscord, FaFacebook, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -7,6 +13,7 @@ import LogoIcon from "@/app/img/new-logo.png"; // Adjust path to where you saved
 interface SocialLink {
   icon: React.ReactNode;
   url: string;
+  label: string;
 }
 
 interface Community1Props {
@@ -23,9 +30,9 @@ const Community1 = ({
   heading = "Join our community",
   headingHighlight = "of learners & earners",
   socialLinks = [
-    { icon: <FaXTwitter />, url: "#" },
-    { icon: <FaFacebook />, url: "#" },
-    { icon: <FaLinkedin />, url: "#" },
+    { icon: <FaXTwitter />, url: "#", label: "Follow us on Twitter" },
+    { icon: <FaFacebook />, url: "#", label: "Follow us on Facebook" },
+    { icon: <FaLinkedin />, url: "#", label: "Follow us on LinkedIn" },
   ],
   className,
 }: Community1Props) => {
@@ -44,7 +51,12 @@ const Community1 = ({
           <div className="flex items-center gap-4">
             {socialLinks.map((link, index) => (
               <Button key={index} size="lg" variant="outline" asChild>
-                <a href={link.url} target="_blank" className="size-10">
+                <a
+                  href={link.url}
+                  target="_blank"
+                  aria-label={link.label}
+                  className="size-10"
+                >
                   {link.icon}
                 </a>
               </Button>
