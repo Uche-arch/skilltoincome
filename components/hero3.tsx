@@ -1,3 +1,9 @@
+"use client";
+
+import { useState } from "react";
+import { DemoModal } from "@/components/demo-modal";
+import { modalContent } from "@/lib/modal-content";
+
 import { ArrowDownRight, Star } from "lucide-react";
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
@@ -6,6 +12,9 @@ import { cn } from "@/lib/utils";
 import Heroimg from "@/app/img/cathie-hero.png";
 import avatar1 from "@/app/img/creator-1.png";
 import avatar2 from "@/app/img/creator-2.png";
+import avatar3 from "@/app/img/creator-3.png";
+import avatar4 from "@/app/img/creator-4.png";
+import avatar5 from "@/app/img/creator-11.png";
 import Image from "next/image";
 
 interface Hero3Props {
@@ -59,21 +68,23 @@ const Hero3 = ({
         alt: "Avatar 2",
       },
       {
-        src: avatar2.src,
+        src: avatar3.src,
         alt: "Avatar 3",
       },
       {
-        src: avatar1.src,
+        src: avatar4.src,
         alt: "Avatar 4",
       },
       {
-        src: avatar2.src,
+        src: avatar5.src,
         alt: "Avatar 5",
       },
     ],
   },
   className,
 }: Hero3Props) => {
+  const [modal, setModal] = useState<keyof typeof modalContent | null>(null);
+
   return (
     <section
       className={cn("py-20 md:py-24 lg:py-26 flex justify-center", className)}
@@ -111,18 +122,50 @@ const Hero3 = ({
               </p>
             </div>
           </div>
-          <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
+          {/* <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
             {buttons.secondary && (
-              <Button asChild variant="outline" size="lg">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                onClick={() => setModal("consultation")}
+              >
                 <a href={buttons.secondary.url}>
-                  {buttons.secondary.text}
-                  {/* <ArrowDownRight className="size-4" /> */}
+                {buttons.secondary.text}
+                <ArrowDownRight className="size-4" />
                 </a>
               </Button>
             )}
             {buttons.primary && (
-              <Button asChild className="w-full sm:w-auto" size="lg">
-                <a href={buttons.primary.url}>{buttons.primary.text}</a>
+              <Button
+                asChild
+                className="w-full sm:w-auto"
+                size="lg"
+                onClick={() => setModal("academy")}
+              >
+                <a href={buttons.primary.url}>
+                {buttons.primary.text}
+                </a>
+              </Button>
+            )}
+          </div> */}
+          <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
+            {buttons.secondary && (
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => setModal("consultation")}
+              >
+                {buttons.secondary.text}
+              </Button>
+            )}
+            {buttons.primary && (
+              <Button
+                className="w-full sm:w-auto"
+                size="lg"
+                onClick={() => setModal("academy")}
+              >
+                {buttons.primary.text}
               </Button>
             )}
           </div>
@@ -136,6 +179,14 @@ const Hero3 = ({
           />
         </div>
       </div>
+      {modal && (
+        <DemoModal
+          open={!!modal}
+          onClose={() => setModal(null)}
+          title={modalContent[modal].title}
+          description={modalContent[modal].description}
+        />
+      )}
     </section>
   );
 };

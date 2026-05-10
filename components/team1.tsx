@@ -2,7 +2,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import avatar1 from "@/app/img/cathie.jpg";
 import avatar2 from "@/app/img/uche-2.png";
-import avatar3 from "@/app/img/eti.jpg";
+import avatar3 from "@/app/img/creator-11.png";
+import avatar4 from "@/app/img/creator-12.png";
+import avatar5 from "@/app/img/creator-4.png";
+import avatar6 from "@/app/img/creator-2.png";
+
 
 interface TeamMember {
   id: string;
@@ -45,19 +49,19 @@ const Team1 = ({
       id: "member-4",
       name: "Tolu Adeyemi",
       role: "Graphics & Design Coach",
-      avatar: avatar1.src,
+      avatar: avatar4.src,
     },
     {
       id: "member-5",
       name: "Ngozi Uche",
       role: "Content & VA Coach",
-      avatar: avatar1.src,
+      avatar: avatar5.src,
     },
     {
       id: "member-6",
       name: "Emeka Okafor",
       role: "Social Media Coach",
-      avatar: avatar1.src,
+      avatar: avatar6.src,
     },
   ],
   className,

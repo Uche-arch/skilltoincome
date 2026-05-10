@@ -23,8 +23,8 @@ const Community1 = ({
   heading = "Join our community",
   headingHighlight = "of learners & earners",
   socialLinks = [
-    { icon: <FaXTwitter />, url: "https://x.com/shadcnblocks" },
-    { icon: <FaFacebook />, url: "https://github.com/shadcnblocks" },
+    { icon: <FaXTwitter />, url: "#" },
+    { icon: <FaFacebook />, url: "#" },
     { icon: <FaLinkedin />, url: "#" },
   ],
   className,

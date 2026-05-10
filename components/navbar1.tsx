@@ -182,12 +182,16 @@ const Navbar1 = ({
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href={logo.url} className="flex items-center gap-2">
+            <a href={logo.url} className="flex items-center gap-1">
               <img
                 src={logo.src}
                 className="max-h-8 dark:invert"
                 alt={logo.alt}
               />
+              <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+                skill<span className="text-[oklch(0.60_0.22_245)]">up</span>
+                andearn
+              </span>
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -198,12 +202,17 @@ const Navbar1 = ({
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
+                    <a href={logo.url} className="flex items-center gap-1">
                       <img
                         src={logo.src}
                         className="max-h-8 dark:invert"
                         alt={logo.alt}
                       />
+                      <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+                        skill
+                        <span className="text-[oklch(0.60_0.22_245)]">up</span>
+                        andearn
+                      </span>
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -223,7 +232,11 @@ const Navbar1 = ({
                     <Button asChild size="lg">
                       <a href={auth.signup.url}>{auth.signup.title}</a>
                     </Button> */}
-                    <Button variant="outline" size="lg" onClick={() => setModal("consultation")}>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      onClick={() => setModal("consultation")}
+                    >
                       {auth.login.title}
                     </Button>
                     <Button size="lg" onClick={() => setModal("academy")}>
@@ -246,12 +259,9 @@ const Navbar1 = ({
           description={modalContent[modal].description}
         />
       )}
-      
     </section>
   );
 };
-
-
 
 const renderMenuItem = (item: MenuItem) => {
   if (item.items) {

@@ -1,32 +1,32 @@
 export const modalContent = {
   consultation: {
-    title: "Book a Consultation ",
+    title: " Book a Consultation",
     description:
-      "We are finalising our booking system. Once we agree and go live, you will be able to schedule a 1:1 session with Catherine directly from here.",
+      "This button will link directly to your preferred booking or scheduling platform — Calendly, WhatsApp, or any tool you use. We will set this up once you are happy to move forward.",
   },
   academy: {
-    title: "Join the Academy ",
+    title: " Join the Academy",
     description:
-      "Enrollment is almost open! Once we go live, this will take you directly to the academy registration page to begin your learning journey.",
+      "This will link directly to your Selar page or any enrollment platform you use. Once you give the go-ahead, we will plug in the exact link and get this live.",
   },
   explore: {
-    title: "Explore the Academy ",
+    title: " Explore the Academy",
     description:
-      "The full academy page is coming soon. Once live, you will be able to browse all courses, skills, and program details right here.",
+      "This button will take visitors to your academy or course page. We will link it to the right destination once we agree to move forward together.",
   },
   chat: {
-    title: "Chat With Us ",
+    title: " WhatsApp Chat",
     description:
-      "Our WhatsApp link will be available once we confirm Catherine's business contact. We will have someone ready to respond to you quickly.",
+      "This will open a direct WhatsApp chat to your business number. Once you share your contact details with me, I will have this linked and ready immediately.",
   },
   privacy: {
-    title: "Privacy Policy ",
+    title: " Privacy Policy",
     description:
-      "Our Privacy Policy is currently being prepared and will be available before the site goes live. It will outline exactly how your data is collected and protected.",
+      "A Privacy Policy will be generated and added here before the site goes live. This is something I will handle as part of the full site setup once we agree to work together.",
   },
   terms: {
-    title: "Terms of Service ",
+    title: " Terms of Service",
     description:
-      "Our Terms of Service are being drafted and will be live before launch. They will cover everything you need to know about using our platform.",
+      "Terms of Service will be drafted and linked here before launch. Just like the Privacy Policy, this will be handled as part of the complete site delivery.",
   },
 };

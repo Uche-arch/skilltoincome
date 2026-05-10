@@ -60,7 +60,7 @@ const defaultProps: Footer2Props = {
       links: [
         { name: "About Me", href: "#about" },
         { name: "Features", href: "#features" },
-        { name: "Testimonials", href: "#testimonials" },
+        { name: "Testimonials", href: "#testimonial" },
         { name: "Contact", href: "#contact" },
       ],
     },

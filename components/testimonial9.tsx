@@ -8,6 +8,10 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import avatar1 from "@/app/img/creator-1.png";
 import avatar2 from "@/app/img/creator-2.png";
+import avatar3 from "@/app/img/creator-3.png";
+import avatar4 from "@/app/img/creator-4.png";
+import avatar5 from "@/app/img/creator-11.png";
+import avatar6 from "@/app/img/creator-12.png";
 
 interface TestimonialBasicGridItem {
   id?: string;
@@ -42,7 +46,7 @@ const defaultProps: Testimonial9Props = {
       username: "amakaosei",
       date: "2025-01-15",
       role: "Virtual Assistant",
-      avatar: avatar1.src,
+      avatar: avatar2.src,
       content:
         "I joined with zero experience and landed my first client in week four. Catherine breaks everything down so simply that even I — someone who had never worked online — could follow along and start earning.",
       link: "#",
@@ -54,11 +58,11 @@ const defaultProps: Testimonial9Props = {
       username: "oluadeyemi",
       date: "2025-01-20",
       role: "Freelance Graphic Designer",
-      avatar: avatar2.src,
+      avatar: avatar4.src,
       content:
         "The graphic design module was a game changer. I went from not knowing what Canva was to charging clients for brand designs. The step-by-step approach and live sessions made all the difference for me.",
       link: "#",
-      icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/image-set/placeholder/testimonials/social-network-icons/instagram-icon.svg",
+      icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/image-set/placeholder/testimonials/social-network-icons/x-icon.svg",
     },
     {
       id: "3",
@@ -66,7 +70,7 @@ const defaultProps: Testimonial9Props = {
       username: "chisom_eze",
       date: "2025-02-03",
       role: "Content Writer",
-      avatar: avatar1.src,
+      avatar: avatar6.src,
       content:
         "I was skeptical at first, but Catherine's cold DM strategy actually works. I sent ten DMs and got two clients in my first week of trying. This program is the real deal.",
       link: "#",
@@ -78,7 +82,7 @@ const defaultProps: Testimonial9Props = {
       username: "fatimabello",
       date: "2025-02-10",
       role: "Social Media Manager",
-      avatar: avatar2.src,
+      avatar: avatar1.src,
       content:
         "I manage three client accounts now and I only use my phone. Catherine was right — you really do not need a laptop to start. The community managers were so patient with me throughout the program.",
       link: "#",
@@ -90,11 +94,11 @@ const defaultProps: Testimonial9Props = {
       username: "blessingnwosu",
       date: "2025-02-18",
       role: "AI Video Editor",
-      avatar: avatar1.src,
+      avatar: avatar3.src,
       content:
         "The AI video editing skill was something I never imagined learning. Six weeks later I have a portfolio and a paying client. Catherine's weekly check-ins kept me accountable and motivated every single week.",
       link: "#",
-      icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/image-set/placeholder/testimonials/social-network-icons/instagram-icon.svg",
+      icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/image-set/placeholder/testimonials/social-network-icons/linkedin-icon.svg",
     },
     {
       id: "6",
@@ -102,7 +106,7 @@ const defaultProps: Testimonial9Props = {
       username: "emekaokafor",
       date: "2025-03-01",
       role: "Freelance VA & Designer",
-      avatar: avatar2.src,
+      avatar: avatar5.src,
       content:
         "I was working a 9-to-5 and doing this program just 1-2 hours daily. By week five I had made enough to cover the program fee. Best investment I have made in myself this year, hands down.",
       link: "#",
