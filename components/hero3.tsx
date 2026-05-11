@@ -154,7 +154,7 @@ const Hero3 = ({
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => setModal("consultation")}
+                onClick={() => setModal("academy")}
               >
                 {buttons.secondary.text}
               </Button>
@@ -163,7 +163,7 @@ const Hero3 = ({
               <Button
                 className="w-full sm:w-auto"
                 size="lg"
-                onClick={() => setModal("academy")}
+                onClick={() => setModal("consultation")}
               >
                 {buttons.primary.text}
               </Button>
