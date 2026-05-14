@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     { name: "Uche Godswill", url: "https://github.com/Uche-arch" },
   ],
   creator: "Uche Godswill",
-  metadataBase: new URL("https://skilltoincome.vercel.app"),
+  metadataBase: new URL("https://skilltoincome-neon.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://skilltoincome.vercel.app",
+    url: "https://skilltoincome-neon.vercel.app",
     siteName: "SkilltoIncome",
     title: "SkilltoIncome | Learn. Build. Earn Online.",
     description:
