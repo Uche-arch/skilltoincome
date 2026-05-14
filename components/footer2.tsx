@@ -74,7 +74,7 @@ const defaultProps: Footer2Props = {
       ],
     },
   ],
-  copyright: `© ${new Date().getFullYear()} skillupandearn. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} skilltoincome. All rights reserved.`,
   legalLinks: [
     { name: "Privacy Policy", href: "#" },
     { name: "Terms of Service", href: "#" },
@@ -103,15 +103,19 @@ const Footer2 = (props: Props) => {
             <div className="col-span-2 mb-8 lg:mb-0">
               <div className="flex items-center lg:justify-start">
                 <a href={logo?.url} className="flex gap-1">
-                  <img
+                  {/* <img
                     src={logo?.src}
                     alt={logo?.alt}
                     title={logo?.title}
                     className="h-7 dark:invert"
-                  />
-                  <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+                  /> */}
+                  {/* <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
                     skill<span className="text-[oklch(0.60_0.22_245)]">up</span>
                     andearn
+                  </span> */}
+                  <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+                    skill<span className="text-[oklch(0.60_0.22_245)]">to</span>
+                    income
                   </span>
                 </a>
               </div>

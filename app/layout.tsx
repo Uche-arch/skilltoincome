@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Skill Up & Earn | Learn. Build. Earn Online.",
-    template: "%s | Skill Up & Earn",
+    default: "SkilltoIncome | Learn. Build. Earn Online.",
+    template: "%s | SkilltoIncome",
   },
   description:
     "Join Catherine Anthony Ikono's academy and learn five in-demand digital skills — Virtual Assistance, Graphic Design, Social Media Management, Content Writing, and AI Video Editing. Start earning online in just six weeks.",
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "online academy",
     "digital skills",
     "earn online",
+    "skill to income",
     "virtual assistance",
     "graphic design",
     "social media management",
@@ -38,31 +39,31 @@ export const metadata: Metadata = {
     { name: "Uche Godswill", url: "https://github.com/Uche-arch" },
   ],
   creator: "Uche Godswill",
-  metadataBase: new URL("https://skilluhandearn.vercel.app"), // Update to her real domain
+  metadataBase: new URL("https://skilltoincome.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://skilluhandearn.vercel.app",
-    siteName: "Skill Up & Earn",
-    title: "Skill Up & Earn | Learn. Build. Earn Online.",
+    url: "https://skilltoincome.vercel.app",
+    siteName: "SkilltoIncome",
+    title: "SkilltoIncome | Learn. Build. Earn Online.",
     description:
       "Learn five in-demand digital skills and start earning online in six weeks. No laptop, no experience, no excuses.",
     images: [
       {
-        url: "/og-image.jpg", // Add a 1200x630px branded image to your /public folder
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Skill Up & Earn Academy",
+        alt: "SkilltoIncome Academy",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Skill Up & Earn | Learn. Build. Earn Online.",
+    title: "SkilltoIncome | Learn. Build. Earn Online.",
     description:
       "Learn five in-demand digital skills and start earning online in six weeks. No laptop, no experience, no excuses.",
     images: ["/og-image.jpg"],
-    creator: "@skilluandearn", // Update to her real Twitter/X handle
+    creator: "@skilltoincome",
   },
   icons: {
     icon: [

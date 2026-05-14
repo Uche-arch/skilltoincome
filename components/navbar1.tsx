@@ -137,17 +137,17 @@ const Navbar1 = ({
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-1">
-              <img
+              {/* <img
                 src={logo.src}
                 className="max-h-8 dark:invert"
                 alt={logo.alt}
-              />
+              /> */}
               {/* <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}
               </span> */}
               <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
-                skill<span className="text-[oklch(0.60_0.22_245)]">up</span>
-                andearn
+                skill<span className="text-[oklch(0.60_0.22_245)]">to</span>
+                income
               </span>
             </a>
             <div className="flex items-center">
@@ -183,14 +183,14 @@ const Navbar1 = ({
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-1">
-              <img
+              {/* <img
                 src={logo.src}
                 className="max-h-8 dark:invert"
                 alt={logo.alt}
-              />
+              /> */}
               <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
-                skill<span className="text-[oklch(0.60_0.22_245)]">up</span>
-                andearn
+                skill<span className="text-[oklch(0.60_0.22_245)]">to</span>
+                income
               </span>
             </a>
             <Sheet>
@@ -203,15 +203,15 @@ const Navbar1 = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-1">
-                      <img
+                      {/* <img
                         src={logo.src}
                         className="max-h-8 dark:invert"
                         alt={logo.alt}
-                      />
+                      /> */}
                       <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
                         skill
-                        <span className="text-[oklch(0.60_0.22_245)]">up</span>
-                        andearn
+                        <span className="text-[oklch(0.60_0.22_245)]">to</span>
+                        income
                       </span>
                     </a>
                   </SheetTitle>

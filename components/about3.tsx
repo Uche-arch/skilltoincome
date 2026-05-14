@@ -133,11 +133,15 @@ const About3 = ({
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
-              <img
+              {/* <img
                 src={breakout.src}
                 alt={breakout.alt}
                 className="mr-auto h-12 dark:invert"
-              />
+              /> */}
+              <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+                skill<span className="text-[oklch(0.60_0.22_245)]">to</span>
+                income
+              </span>
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
                 <p className="text-muted-foreground">{breakout.description}</p>

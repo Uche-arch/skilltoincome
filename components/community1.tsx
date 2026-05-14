@@ -42,7 +42,11 @@ const Community1 = ({
     >
       <div className="container">
         <div className="flex flex-col items-center gap-5">
-          <img src={logo} alt="logo" className="size-10" />
+          {/* <img src={logo} alt="logo" className="size-10" /> */}
+          <span className="text-xl font-bold tracking-tighter text-[oklch(0.20_0.02_245)]">
+            skill<span className="text-[oklch(0.60_0.22_245)]">to</span>
+            income
+          </span>
           <h2 className="text-center text-3xl font-semibold">
             {heading}
             <br />
